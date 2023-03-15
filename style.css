@@ -1,0 +1,140 @@
+.grid-container {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.template-bg {
+  display: grid;
+  max-width: 1440px;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(./images/bg-intro-desktop.png); */
+}
+
+.content {
+background-image: url(./images/bg-intro-desktop.png);
+max-height: 500px;
+max-width: 800px;
+background-color: #ff7978;
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 35px 60px;
+}
+
+.text {
+  align-self: center;
+}
+
+.text h1 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: Poppins, Arial;
+  color: white;
+}
+
+.text p {
+  font-size: 16px;
+  font-family: Poppins, Arial;
+  font-weight: 400;
+  color: white;
+}
+
+.text-right h1 {
+  box-shadow: 2px 2px 2px 2px #d56364;
+  text-align: center;
+  color: #d9d2e3;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #5d54a3;
+}
+
+.textrightspan {
+  color: white;
+}
+
+.text-right-form {
+  box-shadow: 2px 2px 2px 2px #d56364;
+  border-radius: 5px;
+  background-color: white;
+  padding: 25px 30px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.text-right-form-error {
+  text-align: end;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, Arial;
+  font-weight: 400;
+  font-size: 9px;
+  color: #f57673;
+  display: none;
+}
+
+.text-right-input {
+  /* background-image: url(/images/icon-error.svg); */
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 10px;
+  outline: none;
+  /* border-color: #dfadad; */
+  /* border: none; */
+}
+
+/* .text-right-input:focus {
+  outline: none;
+} */
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: #37cc8a;
+  color: #d0fcf0;
+}
+
+
+.btn:focus {
+  color: #defaed;
+  background: #77e2b4;
+}
+
+.text-right-p {
+  margin: 0px;
+  padding: 0 20px;
+  font-size: 9px;
+  font-weight: 400;
+  font-family: Poppins, Arial;
+  color: #dbdadf;
+}
+
+.terms {
+  color: #fe8372;
+}
+
+@media (max-width: 500px) {
+  .template-bg {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: #ff7978;
+  }
+  .content {
+    background: none;
+    grid-template-columns: 1fr;
+    padding: 15px 30px;
+  }
+  .text h1 {
+    text-align: center;
+  }
+  .text-right h1 {
+    padding: 20px;
+  }
+}
